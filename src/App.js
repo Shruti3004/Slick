@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Slider from "react-slick";
-
+import ".././node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -81,7 +81,7 @@ function App() {
             <div className="slick-slide" key={slide.id}>
               <h2 className="slick-slide-title">{slide.title}</h2>
               <img
-                className="slick-slide-image"
+                className="slick-slide-image img-fluid"
                 src={`https://picsum.photos/800/400?img=${slide.id}`}
               />
               <label className="slick-slide-label">{slide.label}</label>
